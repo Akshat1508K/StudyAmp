@@ -4,7 +4,7 @@ Modern React frontend for the Campus Study Assistant LMS with dark theme UI.
 
 ## Features
 
-- ✅ Modern dark theme UI inspired by GamuX LMS
+- ✅ Modern dark theme UI inspired by StudyAmp AI
 - ✅ React with TypeScript
 - ✅ JWT Authentication
 - ✅ Document Upload & Management
