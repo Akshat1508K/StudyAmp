@@ -1,6 +1,6 @@
 # ⚡ Quick Start Guide
 
-Get GamuX LMS running in 5 minutes!
+Get StudyAmp AI running in 5 minutes!
 
 ---
 
@@ -39,6 +39,8 @@ Open browser: `http://localhost:3000`
 ---
 
 ## 🐧 For Linux/Mac Users
+
+> Run this section only on Linux or macOS. Windows users should follow the Windows instructions above.
 
 ### Terminal 1 (Backend):
 ```bash
