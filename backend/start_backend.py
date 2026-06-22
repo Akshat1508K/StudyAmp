@@ -6,7 +6,7 @@ import uvicorn
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Starting GamuX LMS Backend Server")
+    print("Starting StudyAmp AI Backend Server")
     print("=" * 60)
     print("\nBackend will be available at: http://localhost:8000")
     print("API Docs: http://localhost:8000/docs")
