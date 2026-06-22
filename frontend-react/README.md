@@ -36,7 +36,7 @@ npm install
 cp .env.example .env
 ```
 
-Edit `.env` and set your backend URL (default: `http://localhost:8000`)
+Edit `.env` and set your backend URL (default: `http://localhost:8000`). Keep `.env` local and do not commit it to Git.
 
 3. Start the development server:
 ```bash

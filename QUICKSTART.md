@@ -15,7 +15,10 @@ pip install -r requirements.txt
 ```
 
 ### Step 2: Configure
-Edit `backend/.env` with your credentials:
+Copy the backend env template and edit `backend/.env` with your credentials:
+```bash
+cp backend/.env.example backend/.env
+```
 - MongoDB URI
 - Qdrant URL and API Key  
 - Groq API Key

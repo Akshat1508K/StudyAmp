@@ -111,11 +111,15 @@ pip install -r requirements.txt
 ```
 
 #### Configure Environment
-Create `backend/.env` file:
+Create `backend/.env` file or copy the template from `backend/.env.example`:
+```bash
+cp backend/.env.example backend/.env
+```
+
 ```env
 # MongoDB Atlas
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/
-MONGO_DB_NAME=AI_Helper
+MONGO_DB_NAME=campus_study_assistant
 
 # Qdrant Cloud
 QDRANT_URL=https://xxxxxxxx.cloud.qdrant.io
