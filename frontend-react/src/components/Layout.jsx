@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Outlet, NavLink, useNavigate } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import {
   LayoutDashboard,
@@ -20,7 +20,6 @@ import './Layout.css';
 
 const Layout = () => {
   const { user, logout } = useAuth();
-  const navigate = useNavigate();
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const menuItems = [
@@ -41,7 +40,7 @@ const Layout = () => {
         <div className="sidebar-header">
           <div className="logo">
             <GraduationCap size={32} />
-            {sidebarOpen && <span className="logo-text">GamuX LMS</span>}
+            {sidebarOpen && <span className="logo-text">StudyAmp AI</span>}
           </div>
         </div>
 
