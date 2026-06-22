@@ -1,4 +1,4 @@
-# 🎓 GamuX LMS - AI-Powered Campus Study Assistant
+# 🎓 StudyAmp AI - AI-Powered Campus Study Assistant
 
 A comprehensive Learning Management System powered by AI that helps students study smarter with intelligent document processing, RAG-based Q&A, quiz generation, flashcards, and personalized study plans.
 
