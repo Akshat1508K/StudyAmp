@@ -25,6 +25,7 @@ venv/
 env/
 ENV/
 .venv
+backend/venv_new/
 
 # Environment variables
 .env
