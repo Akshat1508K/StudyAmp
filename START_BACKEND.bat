@@ -1,6 +1,6 @@
 @echo off
 echo ============================================================
-echo Starting GamuX LMS Backend
+echo Starting StudyAmp AI Backend
 echo ============================================================
 echo.
 
