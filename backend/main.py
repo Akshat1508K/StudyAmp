@@ -47,6 +47,19 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+# Middleware to ensure database connections on each request (Vercel compatibility)
+@app.middleware("http")
+async def ensure_db_connection(request, call_next):
+    """Ensure database connections are initialized for each request"""
+    try:
+        await connect_to_mongodb()
+        await init_qdrant_client()
+    except Exception as e:
+        logger.error(f"Database initialization error: {e}")
+    
+    response = await call_next(request)
+    return response
+
 # CORS middleware - Allow React frontend
 app.add_middleware(
     CORSMiddleware,

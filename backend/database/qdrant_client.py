@@ -15,6 +15,15 @@ async def init_qdrant_client():
     """Initialize Qdrant Cloud client"""
     global qdrant_client
     try:
+        # Check if already connected
+        if qdrant_client is not None:
+            try:
+                qdrant_client.get_collections()
+                logger.info("Qdrant already connected")
+                return
+            except:
+                qdrant_client = None
+        
         # Connect to Qdrant Cloud
         qdrant_client = QdrantClient(
             url=settings.QDRANT_URL,

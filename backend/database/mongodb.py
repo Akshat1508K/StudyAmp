@@ -15,6 +15,15 @@ async def connect_to_mongodb():
     """Connect to MongoDB"""
     global mongodb_client
     try:
+        # Check if already connected
+        if mongodb_client is not None:
+            try:
+                await mongodb_client.admin.command('ping')
+                logger.info("MongoDB already connected")
+                return
+            except:
+                mongodb_client = None
+        
         mongodb_client = AsyncIOMotorClient(settings.MONGO_URI)
         # Test connection
         await mongodb_client.admin.command('ping')
