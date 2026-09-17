@@ -51,14 +51,14 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",
-        "https://study-amp-frontend.vercel.app",
-        "https://*.vercel.app",
+        "http://localhost:3000",  # React development server
+        "http://localhost:8501",
+        "https://study-amp-frontend.vercel.app"  # Streamlit (legacy)
+        "*"  # Allow all origins (remove in production)
     ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["*"],
 )
 
 # Include routers
