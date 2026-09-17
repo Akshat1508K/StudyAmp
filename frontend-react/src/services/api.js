@@ -82,7 +82,7 @@ class APIClient {
   }
 
   async getDocuments(skip = 0, limit = 20) {
-    const response = await this.client.get(`/documents?skip=${skip}&limit=${limit}`);
+    const response = await this.client.get(`/documents/?skip=${skip}&limit=${limit}`);
     return response.data;
   }
 
