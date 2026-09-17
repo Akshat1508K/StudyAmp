@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { api } from '../services/api';
-import { GraduationCap, Loader, Calendar, TrendingDown, TrendingUp } from 'lucide-react';
+import { GraduationCap, Calendar, TrendingDown, TrendingUp } from 'lucide-react';
 
 const StudyPlan = () => {
   const [studyPlan, setStudyPlan] = useState(null);
